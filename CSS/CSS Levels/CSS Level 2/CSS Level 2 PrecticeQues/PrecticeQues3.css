@@ -1,0 +1,43 @@
+h1 {
+    
+    color:blue;
+}
+
+
+/* Universe function */
+*{
+    text-align: center;
+    font-family:'corner', Center;
+}
+
+h1, h2 {
+    font-family: Georgia;
+}
+
+p{
+    color:white;
+    background-color:cornflowerblue;
+}
+
+button{
+    background-color:purple;
+    color:azure;
+}
+
+/* hover */
+button:hover{
+    background-color:yellow;
+    color:blue;
+}
+
+p:nth-of-type(1n) {
+    color:yellow;
+}
+
+h1::first-letter{
+    color:red;
+}
+
+input[type="checkbox"]:checked + label{
+    color:green;
+}

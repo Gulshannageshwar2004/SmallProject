@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Lohitha 🌹</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="b1.css">
+</head>
+<body>
+
+<canvas id="stars-canvas"></canvas>
+
+<div id="fairy-lights"><div class="light-string" id="light-string"></div></div>
+
+<audio id="bg-music" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<div id="curtain-wrap" class="active">
+  <div class="curtain curtain-left"></div>
+  <div class="curtain curtain-right"></div>
+</div>
+
+<!-- LANDING -->
+<section class="screen" id="landing">
+  <p class="landing-ornament">✦ A special day ✦</p>
+  <h1 class="landing-title">
+    Happy Birthday
+    <span class="landing-name">Lohitha 🌹</span>
+  </h1>
+  <div class="divider-diamond">✦</div>
+  <div class="divider"></div>
+  <p class="landing-sub">A journey made just for you awaits…</p>
+  <button class="btn-primary" onclick="startJourney()">Ready for your surprise? ✨</button>
+</section>
+
+<!-- STEP PANEL -->
+<section class="screen" id="step-panel">
+  <p class="step-title">Your special evening begins</p>
+  <p class="step-subtitle">Follow each step, in order…</p>
+  <button class="step-btn" id="btn-lights" onclick="doLights(this)">
+    <span class="btn-icon">🕯️</span> Turn on the Lights
+  </button>
+  <button class="step-btn" id="btn-music" onclick="doMusic(this)">
+    <span class="btn-icon">🎵</span> Play the Music
+  </button>
+  <button class="step-btn" id="btn-balloons" onclick="doBalloons(this)">
+    <span class="btn-icon">🎈</span> Fly the Balloons
+  </button>
+  <button class="step-btn" id="btn-message" onclick="doReveal(this)">
+    <span class="btn-icon">💌</span> Show the Message
+  </button>
+</section>
+
+<!-- MAIN CARD + GALLERY -->
+<div id="main-card">
+  <section class="screen" style="padding-top: 80px;">
+    <div class="card-wrapper">
+      <span class="card-corner tl">❧</span>
+      <span class="card-corner tr">❧</span>
+      <span class="card-corner bl">❧</span>
+      <span class="card-corner br">❧</span>
+      <p class="card-eyebrow">— with all my heart —</p>
+      <h2 class="card-heading">My Dearest</h2>
+      <span class="card-name-gold">Riddhi</span>
+      <div class="card-divider">
+        <div class="card-divider-line"></div>
+        <div class="card-divider-icon">🌹</div>
+        <div class="card-divider-line"></div>
+      </div>
+      <div class="card-body">
+        <p>Today, the stars shine a little brighter, the world feels a little warmer — because <em>you</em> exist in it. Happy Birthday, my love.</p>
+        <p>Every laugh you've gifted me, every quiet moment shared, every single glance that said a thousand words — <strong>I carry all of it</strong>, like the most precious thing I own.</p>
+        <p>On this day that belongs entirely to you, I want you to know: <em>you are extraordinary</em>. Not just because of what you do, but because of the light you simply <em>are</em>.</p>
+        <p>May this year be as breathtaking, as radiant, and as full of wonder as you make every ordinary day feel. <strong>Here's to you — all of you.</strong></p>
+      </div>
+      <p class="card-signature">Forever yours 🌹</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery-section">
+    <h2 class="gallery-title">Moments in Time</h2>
+    <p class="gallery-sub">hover to relive the memory</p>
+    <div class="photo-grid">
+
+      <div class="photo-item">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-icon">📸</div>
+          <div class="photo-placeholder-text">Your photo here</div>
+        </div>
+        <div class="photo-overlay"><p class="photo-caption">My favourite smile in the whole world 💖</p></div>
+      </div>
+
+      <div class="photo-item">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-icon">🌙</div>
+          <div class="photo-placeholder-text">Your photo here</div>
+        </div>
+        <div class="photo-overlay"><p class="photo-caption">The night that changed everything ✨</p></div>
+      </div>
+
+      <div class="photo-item">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-icon">🌸</div>
+          <div class="photo-placeholder-text">Your photo here</div>
+        </div>
+        <div class="photo-overlay"><p class="photo-caption">You in full bloom, just like always 🌸</p></div>
+      </div>
+
+      <div class="photo-item">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-icon">🎶</div>
+          <div class="photo-placeholder-text">Your photo here</div>
+        </div>
+        <div class="photo-overlay"><p class="photo-caption">Our soundtrack on repeat forever 🎶</p></div>
+      </div>
+
+      <div class="photo-item">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-icon">🌊</div>
+          <div class="photo-placeholder-text">Your photo here</div>
+        </div>
+        <div class="photo-overlay"><p class="photo-caption">Endlessly, like the ocean 🌊</p></div>
+      </div>
+
+      <div class="photo-item">
+        <div class="photo-placeholder">
+          <div class="photo-placeholder-icon">💫</div>
+          <div class="photo-placeholder-text">Your photo here</div>
+        </div>
+        <div class="photo-overlay"><p class="photo-caption">You are my favourite adventure 💫</p></div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<script src="b1.js"></script>
+</body>
+</html>

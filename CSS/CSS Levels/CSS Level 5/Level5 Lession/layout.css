@@ -1,0 +1,23 @@
+#layout {
+    height:50px;
+    width:900px;
+    background-color:pink;
+    border-radius:9px;
+    border:2px solid #30c5c7;
+    padding-right:25px;
+}
+
+.container {
+    height:50px;
+    width:80px;
+    font-size:24px;
+    display:inline-block;
+    margin:5px;
+}
+
+div {
+    border-color: solid blue;
+}
+
+
+

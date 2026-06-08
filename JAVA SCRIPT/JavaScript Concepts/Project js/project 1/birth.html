@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Surprise</title>
+    <link rel="stylesheet" href="birth.css">
+</head>
+<body>
+
+    <div class="fairy-lights" id="fairyLights"></div>
+
+    <audio id="bgMusic" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop></audio>
+
+    <div class="container">
+        
+        <div id="step1" class="screen-box active">
+            <h1 class="glow-text">Happy Birthday, Lohitha ji❤️</h1>
+            <p class="sub-text">A cinematic journey created just for you.</p>
+            <button class="btn" onclick="goToStep2()">Open Your Gift</button>
+        </div>
+
+        <div id="step2" class="screen-box">
+            <h2 id="sequenceTitle">The Stage is Set...</h2>
+            
+            <button id="btnLights" class="btn" onclick="turnOnLights()">Turn On Lights</button>
+            <button id="btnMusic" class="btn hidden-element" onclick="playMusic()">Play Music</button>
+            <button id="btnBalloons" class="btn hidden-element" onclick="flyBalloons()">Fly Balloons</button>
+            <button id="btnMessage" class="btn hidden-element" onclick="showMessage()">Show The Message</button>
+        </div>
+
+        <div id="step3" class="screen-box curtain-container">
+            <div class="curtain left-curtain" id="leftCurtain"></div>
+            <div class="curtain right-curtain" id="rightCurtain"></div>
+
+            <div class="birthday-card" id="birthdayCard">
+                <h2 class="card-title">My Dearest Lohita ji❤️,</h2>
+                <p class="card-text">
+                    Today isn't just a date on the calendar; it's a celebration of the light you bring into my life. 
+                    Every moment with you is like a frame from a beautiful movie. May your year be filled with magic!
+                </p>
+                <button class="btn-sm" onclick="showGallery()">Our Memories</button>
+            </div>
+
+            <div class="gallery-section hidden-element" id="gallerySection">
+                <h3 class="gallery-title">Moments in Time</h3>
+                <div class="gallery-grid">
+                    <div class="photo-card">
+                        <img src="https://picsum.photos/300/300?random=1" alt="Memory 1">
+                        <div class="overlay">You make my world beautiful ✨</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="https://picsum.photos/300/300?random=2" alt="Memory 2">
+                        <div class="overlay">My favorite smile ❤️</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="https://picsum.photos/300/300?random=3" alt="Memory 3">
+                        <div class="overlay">Every second with you is a gift 🎁</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="https://picsum.photos/300/300?random=4" alt="Memory 4">
+                        <div class="overlay">Our memories are forever ♾️</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="https://picsum.photos/300/300?random=5" alt="Memory 5">
+                        <div class="overlay">Always & Forever 🌹</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="https://picsum.photos/300/300?random=6" alt="Memory 6">
+                        <div class="overlay">To many more adventures 🥂</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="balloonContainer"></div>
+
+    <script src="birth.js"></script>
+</body>
+</html>

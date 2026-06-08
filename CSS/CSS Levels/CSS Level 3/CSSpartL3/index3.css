@@ -1,0 +1,40 @@
+/* Height property */
+div{
+    height: 100px;
+    width:600px;
+    background-color:pink;
+    /* border-width:5px;
+    border-style:solid;
+    border-color:darkgrey; */
+
+    /* shorthand usese */
+    border: 5px solid purple;
+    /*border-left-style:dashed;
+    border-left-style:blue; */
+    border-top:5px yellow  blue;
+    border-top-right-radius: 15px;
+
+    /* padding */
+    padding-top:15px;
+    /* margin */
+    margin:25px 27px 30px 35px;
+
+}
+
+h1 {
+    /* border-width: 2px;
+    border-style:dashed;
+    border-color:lightpink; */
+    border: 2px dashed green;
+
+    border-radius:15px;
+}
+
+button {
+    border-radius: 10px;
+    border: 2px solid black;
+    /* padding-right:25px;
+    padding-left: 20px; */
+    background-color:yellow;
+    padding:1px 2px 3px 4px;
+}

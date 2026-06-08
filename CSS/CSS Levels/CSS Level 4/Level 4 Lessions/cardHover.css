@@ -1,0 +1,36 @@
+.card {
+    width: 200px;
+    height: 240px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 4px 8px blue;
+    box-shadow:
+    2px 2px red,1em 0 0.2em olive;
+    transition: 1s;
+}
+
+.desc {
+    padding: 0 2px 0 2px;
+}
+
+
+img {
+    width: 200px;
+    border-radius: 5px 5px 0 0;
+    height:150px;
+}
+
+.card:hover {
+    box-shadow: 0  8px 26px red;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}

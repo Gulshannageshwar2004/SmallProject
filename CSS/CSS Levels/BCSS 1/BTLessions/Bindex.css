@@ -1,0 +1,15 @@
+button:hover {
+    background-color:blue;
+    border-radius:5px;
+    color: white;
+    size:20px;
+    box-shadow:3px 8px 10px gray;
+}
+
+button {
+    size:2px;
+}
+
+a {
+    margin-top: 30px;
+}

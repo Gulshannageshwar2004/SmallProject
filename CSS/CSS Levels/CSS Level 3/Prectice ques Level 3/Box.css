@@ -1,0 +1,21 @@
+#box {
+    height:200px;
+    width:250px;
+    background-color:gray;
+    margin: 100px 1em 40px 2em;
+    padding-right: 13em;
+    border:5px dotted black;
+    
+}
+
+
+.circle{
+    height:60px;
+    width:60px;
+    background-color:pink;
+    border: 2px solid black;
+    flex-direction:row;
+    display:inline-block;
+    border-radius:50%;
+    margin:10px;
+}

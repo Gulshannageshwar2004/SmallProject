@@ -1,0 +1,9 @@
+div {
+    width:400px;
+    height: 200px;
+    background-color:rgb(25, 33, 145);
+    margin: 10px auto;
+    background-image: url("nature.jpg");
+    background-size: cover;
+    color: rgb(218, 54, 54);
+}

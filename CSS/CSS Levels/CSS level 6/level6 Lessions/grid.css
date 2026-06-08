@@ -1,0 +1,44 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    /* ye items ko row me show karti hai */
+    /* display: flex; */
+    
+    /* grid-template-rows:50px 50px 50px 50px;
+    grid-template-columns:200px 200px 200px; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:10px;
+    /* row-gap: 10px;*/
+    /* justify-items:center;
+    align-items:end; */
+    justify-items: end;
+    /* display: grid;/ span element ke liye 
+    inline-grid property ka use karte hai */
+    display: inline-grid;
+}
+
+
+.item {
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+.one {
+    /* grid-column-start: 1;
+    grid-column-end:4; */
+    /* grid-column:1/span 3; */
+    place-self:start;
+}
+
+.two {
+    /* grid-row-start: 1;
+    grid-row-end:3; */
+    grid-row: 1/3;
+}
+

@@ -1,0 +1,31 @@
+/* universel selector */
+*{
+    font-family:'Courier New';
+    color:#1b74e4;
+}
+
+button {
+
+}
+
+
+
+#searchbtn {
+    background-color:black;
+    color:white;
+}
+
+h1 {
+    color:#1b74e4;
+}
+
+/* id selector */
+#login, #register {
+    background-color:aqua;
+}
+
+/* descendant selector */
+p a {
+    color:purple;
+    background-color:yellow;
+}
