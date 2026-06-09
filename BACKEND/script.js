@@ -5,6 +5,12 @@
 //     console.log("hello to", args[i]);
 // }
 
-const math = require("./math");
+//02//
+// const math = require("./math");
 
-console.log(math.sum(2, 2));
+// console.log(math.sum(2, 2));
+
+//03//
+const info = require("./fruits");
+
+console.log(info);
