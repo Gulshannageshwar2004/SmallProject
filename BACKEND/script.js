@@ -11,6 +11,13 @@
 // console.log(math.sum(2, 2));
 
 //03//
-const info = require("./fruits");
+// const info = require("./fruits");
 
-console.log(info);
+// console.log(info);
+
+//04// 
+import {sum, PI} from "./math.js";
+import { generate } from "random-words";
+
+console.log(generate());
+
